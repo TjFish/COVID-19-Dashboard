@@ -1,0 +1,24 @@
+{
+  "name": "covid3d",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html --public-url /COVID-19-Dashboard/3d/"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/plugin-transform-runtime": "^7.9.0",
+    "parcel-bundler": "^1.12.4"
+  },
+  "dependencies": {
+    "csvtojson": "^2.0.10",
+    "d3": "^5.15.0",
+    "dayjs": "^1.8.23",
+    "globe.gl": "^2.8.5"
+  }
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:description" content="COVID-19 3D展示." />
+    <meta
+      name="monetization"
+      content="$coil.xrptipbot.com/701298d5-481d-40ff-9945-336671ab2c42"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Space+Mono:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <meta property="og:image" content="https://i.imgur.com/1AFEXhs.png" />
+    <title>3D-展示</title>
+    <link rel="stylesheet" href="./styles/main.css" />
+  </head>
+  <body>
+    <div id="globeViz"></div>
+    <div class="top-info-container">
+      <div class="title">3D-展示</div>
+      <div class="title-desc">
+        加载中 ...
+      </div>
+    </div>
+
+    <div class="bottom-info-container">
+      <div style="display: flex; justify-content: center;">
+        <div class="timeline-container">
+          <button disabled style="margin-right: 10px;" class="play-button">
+            播放
+          </button>
+          <input
+            class="slider"
+            disabled
+            type="range"
+            min="0"
+            max="1"
+            step="1"
+          />
+          <span
+            style="font-size: 14px; color: #ccd6f6;"
+            class="slider-date"
+          ></span>
+        </div>
+      </div>
+      <div style="font-size: 14px; color: #ccd6f6; margin-top: 35px;">
+        总计 <span class="updated"></span>
+      </div>
+      <div style="color: #e6f1ff; padding: 0 5px;">
+        确诊: <span id="infected">0</span> • 死亡:
+        <span id="deaths">0</span> • 治愈: <span id="recovered">0</span>
+      </div>
+      <div style="margin-top:5px;"> 
+        <a href="https://github.com/sorxrob/covid-3d" rel="noopener noreferrer" target="_BLANK" style="color:#fff;text-decoration:none;">
+          原项目地址<font size="2">（我仅仅去掉后端加汉化）</font></a> 
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
