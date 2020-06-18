@@ -35,7 +35,8 @@
 - 探索太空 <https://github.com/AzureLeon1/Explore-Space>
 - 宫崎骏电影小站
 - 个人博客 <https://github.com/hlr7999/MyBlog> （纯手撸强强强，~~答辩80分反面教材~~）
-- Unity导出WebGl了解一下？ <https://learn.unity.com/tutorial/fps-mod-weapon-parameters>
+- Unity导出WebGl了解一下？ <https://maninroad.github.io/MyWebFPS/>
+- Unity 学习教程<https://learn.unity.com/tutorial/fps-mod-weapon-parameters>
 
 拿良不难，有成品基本就行，拿优看选题和运气
 
