@@ -68,5 +68,38 @@ A: 建议心态放轻松, 往年来看被怼也不一定拿良，有时候金爷
 
 
 
+## Run it
+
+运行项目前，需要先安装npm，由于nodejs自带npm，所以直接安装[nodejs](https://nodejs.org/zh-cn/) 即可。
+
+下载源代码后，项目分为两个子项目
+
+- Dashboard
+
+```powershell
+# 工作目录
+cd Dashboard 
+# 安装依赖
+npm install 
+# 启动server
+npm run server 
+```
+
+​	open browser  http://localhost:8080/
+
+- 3d
+
+```powershell
+cd 3d
+npm install 
+npm run dev
+```
+
+​	open browser http://localhost:1234/
+
+**最后，本项目代码混乱，赶工明显，不建议继续开发。谨希望能为学弟学妹们提供一些思路~~**
+
+**祝好！**
+
 
 
