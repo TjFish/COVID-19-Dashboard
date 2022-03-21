@@ -1,0 +1,31 @@
+.covid-data-table-wrapper {
+  overflow-y: auto;
+  height: 350px;
+}
+
+.covid-data-table-wrapper > table > thead th {
+  position: sticky;
+  top: 0;
+  box-shadow: 0 0 0 1px #343a40;
+}
+
+.covid-data-table-wrapper > table > thead th[sortable] {
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+#CovidChart {
+  width: 49%;
+  height: 350px;
+  float: left;
+}
+
+#RegionsTable{
+  width: 49%;
+  float: right;
+}
+#TableFilters{
+  width: 49%;
+  float: right;
+
+}
