@@ -12,7 +12,7 @@
         <v-icon left>mdi-home-variant-outline</v-icon>
         <span class="hidden-sm-and-down">首页</span>
       </v-btn>
-      <v-btn text value="center" href="http://localhost:1234" target="_Blank">
+      <v-btn text value="center" href="/COVID-19-Dashboard/3d/" target="_Blank">
         <v-icon left>mdi-earth</v-icon>
         <span class="hidden-sm-and-down">3D展示</span>
       </v-btn>

@@ -4,7 +4,10 @@
       <v-card-text class="d-flex justify-space-between">
         <v-row>
           <v-col cols="12" :class="[$vuetify.breakpoint.mdAndUp ? 'text-left' : 'text-center']">
-            本项目是2020Web系统技术期末作业-<a href="https://github.com/TjFish">1753112-欧阳桥梁</a
+            本项目是同济大学2020Web系统技术期末作业-作者-<a href="https://github.com/TjFish"
+              >TjFish</a
+            >
+            -更多信息请查看<a href="https://tjfish.top">我的个人博客</a
             >&nbsp;&nbsp;&nbsp;&nbsp;<br />
             数据来源：
             <a

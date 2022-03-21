@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-navigation-drawer v-model="drawer" app clipped style="width: 280px;">
+    <v-navigation-drawer v-model="drawer" app clipped style="width: 300px;">
       <v-list three-line>
         <div v-if="loading">
           <v-list-item link v-for="i in 20" :key="i">
@@ -55,7 +55,7 @@
         <v-icon left>mdi-home-variant-outline</v-icon>
         <span class="hidden-sm-and-down">首页</span>
       </v-btn>
-      <v-btn text value="center" href="http://localhost:1234" target="_Blank">
+      <v-btn text value="center" href="/COVID-19-Dashboard/3d/" target="_Blank">
         <v-icon left>mdi-earth</v-icon>
         <span class="hidden-sm-and-down">3D展示</span>
       </v-btn>
@@ -121,7 +121,7 @@
         <v-row>
           <v-col cols="12">
             <v-card tile style="height: 70vh;" flat>
-              <LeafletMap :data="cases.data" ref="map" @MARKER_CLICKED="viewDetails" />
+              <LeafletMap :cases="cases" ref="map" @MARKER_CLICKED="viewDetails" />
             </v-card>
           </v-col>
         </v-row>

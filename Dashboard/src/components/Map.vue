@@ -31,7 +31,7 @@ import { mapState } from 'vuex';
 
 export default {
   name: 'Map',
-  props: ['data'],
+  props: ['cases'],
   data: () => ({
     url: 'https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png',
     zoom: 2,
@@ -42,10 +42,10 @@ export default {
   computed: {
     ...mapState(['isDarkTheme']),
     locations() {
-      const withConfirmedData = this.data.filter(i => i.dates[i.dates.length - 1].confirmed);
+      const withConfirmedData = this.cases.data.filter(i => i.dates[i.dates.length - 1].confirmed);
       return withConfirmedData.map(item => ({
         ...item,
-        radius: this.scale(item.dates[item.dates.length - 1].confirmed)
+        radius: this.scale(item.dates[item.dates.length - 1], this.cases.total_confirmed)
       }));
     },
     tileLayerUrl() {
@@ -75,12 +75,13 @@ export default {
     flyTo(lat, lon) {
       this.$refs.map.mapObject.flyTo([lat, lon], 5);
     },
-    scale(d) {
+    scale(d, total_confirmed) {
+      // console.log(d);
       const min = 5;
-      const factor = 20;
+      const factor = 2000;
       const zoomFactor = this.zoom >= 5 ? 1 : this.zoom / 10; // adjust divisor for best optics
       // console.log(Math.floor((d / 80000) * factor * zoomFactor) + min);
-      return Math.floor((d / 80000) * factor * zoomFactor) + min;
+      return Math.floor((d.confirmed * factor * zoomFactor) / total_confirmed) + min;
     },
     getUserLocation() {
       if (navigator.geolocation) {
